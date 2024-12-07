@@ -1,0 +1,7 @@
+[package]
+name = "rs-encoder-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ffmpeg-next = { git = "https://github.com/zmwangx/rust-ffmpeg.git", branch = "master" }
