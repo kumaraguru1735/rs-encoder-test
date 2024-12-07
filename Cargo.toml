@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-ffmpeg-next = { git = "https://github.com/zmwangx/rust-ffmpeg.git", branch = "master" }
+ffmpeg-next = { git = "https://github.com/zmwangx/rust-ffmpeg.git", rev = "a7b50dd5f909e071affffe238d434d184da30aee"}
