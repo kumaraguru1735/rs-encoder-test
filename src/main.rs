@@ -66,7 +66,10 @@ impl VideoTranscoder {
             encoder_ctx.set_flags(codec::Flags::GLOBAL_HEADER);
         }
 
-        let x264_opts = Dictionary::new();
+        let x264_opts = Dictionary::from_iter([
+            ("preset", "ultrafast"),
+            ("tune", "zerolatency"),
+        ]);
         let opened_encoder = encoder_ctx.open_with(x264_opts)?;
         ost.set_parameters(&opened_encoder);
 
